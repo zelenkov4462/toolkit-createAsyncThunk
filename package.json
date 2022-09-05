@@ -2,6 +2,7 @@
   "name": "toolkit-clone",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://zelenkov4462.github.io/toolkit-createAsyncThunk",
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.3",
     "@testing-library/jest-dom": "^5.16.4",
@@ -17,9 +18,11 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
 
+  },
   "extends": [
     "react-app",
     "react-app/jest"
@@ -37,6 +40,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.19.0"
+    "eslint": "^8.19.0",
+    "gh-pages": "^4.0.0"
   }
 }
